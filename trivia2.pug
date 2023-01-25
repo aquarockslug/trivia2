@@ -1,0 +1,31 @@
+doctype html
+head
+  script(type='text/javascript' src='javascripts/anime.min.js')
+  script(type='text/javascript' src='javascripts/trivia2.js')
+  script(type='text/javascript' src='javascripts/triviaCube.js')
+  link(rel='stylesheet' href='stylesheets/trivia2.css')
+  link(rel='stylesheet' href='stylesheets/triviaCube.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nova+Square&display=swap' rel='stylesheet')
+.main
+  #grid
+button#back(onclick="location.href='/index.html'") Back
+#game
+  h1#title Trivia 
+  #setup
+    h3#score
+    h3#category
+      | Category:    
+      select#categorySelect
+    h3#length
+      | Length of quiz:    
+      input#lengthSelect(type='number' min='1' max='50')
+    #belowBox
+      button#start(onclick='start()') Start
+  #quiz
+    h3#description
+    h2#question  
+    #answersBox
+    #belowBox
+      button#next(onclick='next()') Next

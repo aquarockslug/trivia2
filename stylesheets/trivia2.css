@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #4F518C;
+}
+h1, h2, h3, p {
+    font-family: 'Nova Square', 'Verdana';
+    font-weight: bolder;
+    color: white;
+}
+p {font-size: 24px; opacity: 100%;}
+button {
+    font-family: 'Nova Square', 'Verdana';
+    background-color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    padding: 10px;
+}
+#categorySelect {width: 50%}
+#game {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    align-items: center;
+    top: 150px;
+    width: 70%;
+}
+#setup, #quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #907AD6;
+    opacity: 95%;
+    padding: 20px;
+    border-radius: 10px;
+}
+#title {font-size: 80px; margin: 30px;}
+#lengthSelect {width: 50px;}
+#start, #next {margin: 30px; font-size: 20px;}
+#score {display: none;}
+#quiz {display:none;}
+#start {background-color: lightgreen;}
+#question {flex-wrap: wrap}
+#answersBox{
+    background-color: #4F518C;
+    display: flex;
+    flex-wrap: wrap;
+}
+#answersBox>button{
+    width: 40%; height: 80px;
+    margin: 5%;
+}
+#belowBox {display: flex; justify-content: center;}
+#start {
+    font-size: 16px;
+    background-color: white;
+    padding: 20px ;
+    width: 75%;
+}
+#back {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+
