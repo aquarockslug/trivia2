@@ -7,26 +7,45 @@ h1, h2, h3, p {
     font-family: 'Nova Square', 'Verdana';
     font-weight: bolder;
     color: white;
+    /* margin: 10px; */
 }
 p {font-size: 24px; opacity: 100%;}
+select {font-family: 'Nova Square', 'Verdana';}
+
+/* big screen */
+#start, #next {font-size: 16px;}
+#setup, #quiz {width: 50%;}
+h3 {font-size: 16px;}
+h2 {font-size: 32px;}
+select, input {font-size: 16px;}
+
+/* small screen */
+@media (max-width: 666px) { 
+    #start, #next {font-size: 32px;}
+    #setup, #quiz {width: 80%;}
+    h3 {font-size: 24px;}
+    h2 {font-size: 40px;}
+    select, input {font-size: 32px;}
+}
+
 button {
     font-family: 'Nova Square', 'Verdana';
     background-color: white;
-    font-size: 24px;
+    font-size: 100%;
     font-weight: bolder;
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
-#categorySelect {width: 50%}
+#categorySelect {width: 100%;}
 #game {
     position: absolute;
     display: flex;
     z-index: 2;
     flex-direction: column;
     align-items: center;
-    top: 150px;
-    width: 70%;
+    width: 100%;
+    top: 10%;
 }
 #setup, #quiz {
     display: flex;
@@ -36,9 +55,12 @@ button {
     opacity: 95%;
     padding: 20px;
     border-radius: 10px;
-}
+}  
+
 #title {font-size: 80px; margin: 30px;}
 #lengthSelect {width: 50px;}
+#length { margin: 10px; }
+#category {margin: 10px;}
 #start, #next {margin: 30px; font-size: 20px;}
 #score {display: none;}
 #quiz {display:none;}
@@ -55,7 +77,6 @@ button {
 }
 #belowBox {display: flex; justify-content: center;}
 #start {
-    font-size: 16px;
     background-color: white;
     padding: 20px ;
     width: 75%;

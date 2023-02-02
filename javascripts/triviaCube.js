@@ -1,5 +1,6 @@
 window.onload = function() {
     console.log('loaded cube.js script')
+    // disableScroll();
     getCategories();
 
     cubeSize = 165
@@ -29,6 +30,14 @@ function loadCubes(amount){
     }
 
     animate()
+}
+
+function disableScroll() {
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    window.onscroll = function () {
+        window.scrollTo(scrollLeft, scrollTop);
+    };
 }
 
 function animate(){

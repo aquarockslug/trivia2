@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+  <meta name="viewport" content="width=device-width" />
   <script type="text/javascript" src="javascripts/anime.min.js"></script>
   <script type="text/javascript" src="javascripts/trivia2.js"></script>
   <script type="text/javascript" src="javascripts/triviaCube.js"></script>
@@ -17,9 +18,11 @@
   <div id="game">
     <h1 id="title">Trivia </h1>
     <div id="setup">
-      <h3 id="score"></h3>
+      <h2 id="score"></h2>
       <h3 id="category">Category:    <select id="categorySelect"></select></h3>
-      <h3 id="length">Length of quiz:    <input type="number" min="1" max="50" id="lengthSelect"></h3>
+      <h3 id="length">Length of quiz:    
+        <input type="number" min="1" max="50" id="lengthSelect" value="5">
+      </h3>
       <div id="belowBox">
         <button onclick="start()" id="start">Start</button>
       </div>
